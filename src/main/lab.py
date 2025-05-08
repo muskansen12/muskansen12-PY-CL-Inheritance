@@ -30,8 +30,12 @@ class Vehicle:
         """
         print("Engine started")
 
-
-    # To do: Create a Python class named Car that inherits from the Vehicle class.
+      
+     # To do: Create a Python class named Car that inherits from the Vehicle class.
+class Car(Vehicle):
+    def __init__(self, make, model, year, fuel_type):
+            super().__init__(make, model, year)
+            self.fuel_type = fuel_type
     """
     Complete the Car class by filling in the constructor (__init__) and methods 
     (drive and refuel) as described below:
@@ -54,5 +58,15 @@ class Vehicle:
                 - Prints:
                 - str: "Car is refueling"
     """
+                    
+
+    def drive(self):
+            print("Car is moving")
+
+
+    def refuel(self):
+            print("Car is refuelling")
+
+
         
 
